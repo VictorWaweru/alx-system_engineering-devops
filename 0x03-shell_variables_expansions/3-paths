@@ -1,2 +1,2 @@
 #!/bin/bash
-path/to/directory -type d | wc -l
+echo$((' echo $PATH | grep -o ":/" | wc -1 ' +1))
